@@ -24,4 +24,11 @@ public class XSSController {
 
         return "a"+ls;
     }
+
+    @RequestMapping(value = "xsssafe2")
+    @ResponseBody
+    public Object xsssafe2(@RequestParam(value = "ls") Long ls){
+
+        return ls;
+    }
 }
